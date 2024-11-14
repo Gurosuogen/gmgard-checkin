@@ -52,22 +52,22 @@ load_send()
 if COOKIE_ENV:
     url = f"https://gmgard.com/api/PunchIn/Do"
     headers = {
+        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:132.0) Gecko/20100101 Firefox/132.0",
         "Accept":"*/*",
-        "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
-        "Sec-Fetch-Dest":"empty",
-        "Sec-Fetch-Mode":"cors",
-        "Sec-Fetch-Site":"same-origin",
-        "Origin":"https://gmgard.com",
-        "Referer":"https://gmgard.com/",
         "Accept-Language":"zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
         "Accept-Encoding":"gzip, deflate, br, zstd",
         "Content-Type":"application/json",
         "X-Requested-With":"XMLHttpRequest",
+        "Origin":"https://gmgard.com",
         "DNT":"1",
         "Sec-GPC":"1",
         "Connection":"keep-alive",
+        "Referer":"https://gmgard.com/",
+        "Sec-Fetch-Dest":"empty",
+        "Sec-Fetch-Mode":"cors",
+        "Sec-Fetch-Site":"same-origin",
         "Priority":"u=0",
-        'Cookie': COOKIE_ENV
+        "Cookie": COOKIE_ENV
     }
 
     try:
