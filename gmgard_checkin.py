@@ -50,7 +50,7 @@ def load_send():
 load_send()
 
 if COOKIE_ENV:
-    url = f"gmgard.com/api/PunchiIn/Do"
+    url = f"https://gmgard.com/api/PunchIn/Do"
     headers = {
         "Accept":"*/*",
         "User-Agent":"Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36 Edg/125.0.0.0",
@@ -60,7 +60,6 @@ if COOKIE_ENV:
         "Origin":"https://gmgard.com",
         "Referer":"https://gmgard.com/",
         "Accept-Language":"zh-CN,zh;q=0.8,zh-TW;q=0.7,zh-HK;q=0.5,en-US;q=0.3,en;q=0.2",
-
         "Accept-Encoding":"gzip, deflate, br, zstd",
         "Content-Type":"application/json",
         "X-Requested-With":"XMLHttpRequest",
@@ -68,7 +67,6 @@ if COOKIE_ENV:
         "Sec-GPC":"1",
         "Connection":"keep-alive",
         "Priority":"u=0",
-
         'Cookie': COOKIE_ENV
     }
 
