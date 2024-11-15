@@ -71,7 +71,7 @@ if COOKIE_ENV:
     }
 
     try:
-        response = requests.post(url, headers=headers,impersonate="chrome110")
+        response = requests.post(url, headers=headers,impersonate="chrome120")
         response_data = response.json()
         print(response_data)
         print(COOKIE_ENV)
